@@ -1,11 +1,13 @@
 import { AppWrapper } from "../assets";
-import { Footer } from "./footer";
-import { Header } from "./header";
+import { Footer } from "./layout/footer";
+import { Header } from "./layout/header";
+import { ViewPort } from "./view-port";
 
 export const App = () => {
   return (
     <AppWrapper>
       <Header />
+      <ViewPort />
       <Footer />
     </AppWrapper>
   );

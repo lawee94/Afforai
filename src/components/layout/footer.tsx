@@ -1,10 +1,10 @@
-import { FooterWrapper, Title } from "../assets";
+import { FooterWrapper, Title } from "../../assets";
 import {
   companyInformation,
   language,
   resources,
   socialInformation,
-} from "./extra";
+} from "../extra";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -30,6 +30,7 @@ export const Footer = () => {
         <span>
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://www.producthunt.com/products/afforai?utm_source=badge-top-post-badge&utm_medium=badge#afforai"
           >
             <img
@@ -69,7 +70,7 @@ const ListInformation = ({
     <ul>
       {items?.map((item) => (
         <li key={item.title}>
-          <a href={item.link} target="_blank">
+          <a href={item.link} target="_blank" rel="noreferrer">
             {item.title}
           </a>
         </li>

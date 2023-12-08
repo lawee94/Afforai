@@ -69,3 +69,10 @@ export const language = [
     link: "#",
   },
 ];
+
+export const features = [
+  "Summarize Key Findings",
+  "Compare Between Documents",
+  "Search For Answers",
+  "Ask in Any Language",
+];

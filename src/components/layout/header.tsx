@@ -1,4 +1,4 @@
-import { Button, HeaderNav } from "../assets";
+import { Button, HeaderNav } from "../../assets";
 
 const navLinks = ["Affiliate", "Pricing", "Testimonials", "Help Center"];
 

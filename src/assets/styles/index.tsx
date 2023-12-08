@@ -22,6 +22,7 @@ export const AppWrapper = styled.body`
   max-width: 1600px;
   margin: 0 auto;
   padding: 100px 60px;
+  color: rgb(82, 82, 82);
 
   a {
     text-decoration: none;
@@ -47,7 +48,7 @@ export const AppWrapper = styled.body`
   }
 
   @media (max-width: 768px) {
-    padding: 100px 20px;
+    padding: 40px 20px;
   }
 `;
 
@@ -60,6 +61,10 @@ export const Button = styled.button`
   transition-duration: 0.2s;
   cursor: pointer;
   box-shadow: none;
+
+  &.btn-md {
+    font-size: 16px;
+  }
 
   &.btn-gradient {
     background: linear-gradient(
@@ -152,7 +157,6 @@ export const FooterWrapper = styled.footer`
   border: 1px solid rgb(209, 213, 219);
   border-radius: 16px;
   margin: auto;
-  color: rgb(82, 82, 82);
   font-size: 13px;
 
   span,
@@ -169,4 +173,100 @@ export const FooterWrapper = styled.footer`
 export const Title = styled.h6`
   color: rgb(17, 17, 17);
   font-weight: 500;
+`;
+
+export const ViewPortWrapper = styled.div`
+  text-align: center;
+  padding: 40px 20px;
+
+  .deal {
+    padding: 6px 6px 6px 10px;
+    margin-bottom: 30px;
+    gap: 6px;
+    border-radius: 12px;
+    border: 2px solid rgb(51, 51, 51);
+    background: linear-gradient(
+      269deg,
+      rgb(255, 185, 1) 17.08%,
+      rgb(255, 149, 1) 100%
+    );
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 1px 1px 0px,
+      rgba(0, 0, 0, 0.09) 0px 2px 2px 0px,
+      rgba(0, 0, 0, 0.05) 0px 5px 3px 0px,
+      rgba(0, 0, 0, 0.01) 0px 9px 4px 0px,
+      rgba(0, 0, 0, 0) 0px 14px 4px 0px;
+    backdrop-filter: blur(28px);
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+
+    img {
+      width: 26px;
+      margin-right: 5px;
+    }
+
+    p {
+      display: inline-block;
+      margin: 0 0 0 6px;
+      padding: 6px 0 6px 6px;
+      gap: 2px;
+      border-radius: 6px;
+      border: 1px solid rgb(51, 51, 51);
+      color: inherit;
+
+      background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50.04%,
+        rgba(255, 255, 255, 0.5) 50.85%
+      );
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .text-content {
+    max-width: 670px;
+    margin: auto;
+
+    h1 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 130%;
+      color: rgb(34, 34, 34);
+    }
+
+    p {
+      margin: 50px 0;
+    }
+  }
+
+  .feature {
+    padding: 4px 6px;
+    gap: 4px;
+    border-radius: 4px;
+    border: 1px solid rgb(230, 230, 230);
+    margin-right: 40px;
+    font-size: 13px;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 40px 0;
+    text-align: left;
+    .deal {
+      width: 100%;
+    }
+    .text-content {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
 `;
