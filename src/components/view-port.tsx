@@ -1,22 +1,20 @@
 import Marquee from "react-fast-marquee";
-import { Button, CheckMark, ChevronRight, ViewPortWrapper } from "../assets";
+import {
+  Button,
+  CheckMark,
+  ChevronRight,
+  ViewPortWrapper,
+  links,
+} from "../assets";
 import { features } from "./extra";
 
 export const ViewPort = () => {
   return (
     <ViewPortWrapper>
       <div className="deal">
-        <img
-          src="https://afforai.com/img/icons/appsumo.png"
-          width={26}
-          alt="AppSumo"
-        />
+        <img src={links.appSumo} width={26} alt="AppSumo" />
         Now on AppSumo
-        <a
-          href="https://appsumo.8odi.net/3eR3xn"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={links.appSumoLink} target="_blank" rel="noreferrer">
           <p>
             Get Lifetime Deal <ChevronRight />
           </p>
@@ -42,9 +40,14 @@ export const ViewPort = () => {
         <Features />
       </div>
 
-      <div className="d-flex justify-content-center">
-        <Button className="btn-gradient btn-md me-3">Try for free</Button>
-        <Button className="btn-gray btn-md">View Pricing</Button>
+      <div className="buttons">
+        <a href={links.signup} target="_blank" rel="noreferrer">
+          <Button className="btn-gradient btn-md me-3">Try for free</Button>
+        </a>
+
+        <a href={links.pricing} target="_blank" rel="noreferrer">
+          <Button className="btn-gray btn-md">View Pricing</Button>
+        </a>
       </div>
     </ViewPortWrapper>
   );

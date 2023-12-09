@@ -24,6 +24,10 @@ export const AppWrapper = styled.body`
   padding: 100px 60px;
   color: rgb(82, 82, 82);
 
+  .container {
+    padding: 170px 60px;
+  }
+
   a {
     text-decoration: none;
     color: unset;
@@ -32,6 +36,15 @@ export const AppWrapper = styled.body`
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  .text-purple {
+    color: rgb(128, 54, 255);
+  }
+
+  .badge-primary {
+    background: rgb(239, 230, 255);
+    color: rgb(96, 4, 255);
   }
 
   .navbar-brand {
@@ -47,8 +60,37 @@ export const AppWrapper = styled.body`
     }
   }
 
+  .spacing-100 {
+    padding: 100px 0 100px 60px;
+  }
+
+  .text-sm {
+    font-size: 14px;
+  }
+
   @media (max-width: 768px) {
     padding: 40px 20px;
+
+    .container {
+      padding: 40px 0;
+    }
+  }
+`;
+
+export const Title = styled.h6`
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+`;
+
+export const TitleDeep = styled(Title)`
+  color: rgb(58, 2, 153);
+`;
+
+export const HeadingOne = styled(Title)`
+  font-size: 36px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
   }
 `;
 
@@ -122,7 +164,7 @@ export const HeaderNav = styled.nav`
   .navbar-nav {
     margin: auto;
 
-    span {
+    a {
       color: rgb(17, 17, 17);
       font-weight: 500;
       font-size: 14px;
@@ -160,6 +202,7 @@ export const FooterWrapper = styled.footer`
   font-size: 13px;
 
   span,
+  a,
   li {
     margin-bottom: 20px;
     display: block;
@@ -170,14 +213,9 @@ export const FooterWrapper = styled.footer`
   }
 `;
 
-export const Title = styled.h6`
-  color: rgb(17, 17, 17);
-  font-weight: 500;
-`;
-
 export const ViewPortWrapper = styled.div`
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
 
   .deal {
     padding: 6px 6px 6px 10px;
@@ -257,8 +295,13 @@ export const ViewPortWrapper = styled.div`
     }
   }
 
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
   @media (max-width: 576px) {
-    padding: 40px 0;
+    padding: 40px 0 0;
     text-align: left;
     .deal {
       width: 100%;
@@ -268,5 +311,171 @@ export const ViewPortWrapper = styled.div`
         font-size: 40px;
       }
     }
+  }
+
+  @media (max-width: 480px) {
+    .buttons {
+      display: block;
+
+      button {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+`;
+
+export const LovedUserWrapper = styled.div`
+  padding: 200px 0 0;
+  position: relative;
+  border-radius: 28px;
+  text-align: center;
+  background: url("https://afforai.com/img/graphics/laptop-landing-3.png")
+    no-repeat;
+  background-size: 100%;
+  margin-top: -80px;
+
+  .summary-img {
+    padding: 0 80px 80px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CommonDocumentWrapper = styled.div`
+  justify-content: space-between;
+  align-items: center;
+
+  .check-success {
+    color: rgb(3, 204, 59);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .mode {
+    display: flex;
+    font-size: 14px;
+    color: rgb(38, 2, 102);
+    margin-bottom: 20px;
+
+    .mode-content {
+      padding-top: 2px;
+    }
+    p {
+      display: flex;
+    }
+  }
+`;
+
+export const CommonLayoutWrapper = styled.div`
+  .container-content {
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 576px) {
+      text-align: left;
+    }
+  }
+  .item {
+    border-radius: 1rem;
+    border: 1px solid rgb(230, 230, 230);
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .testimonial-text {
+      color: rgb(34, 34, 34);
+      margin-bottom: 40px;
+      min-height: 140px;
+    }
+
+    &.item-600 {
+      width: 600px;
+      min-width: 600px;
+      padding: 25px 25px 0;
+      margin-right: 20px;
+
+      @media (max-width: 576px) {
+        width: 330px;
+        min-width: 330px;
+      }
+    }
+
+    .img-wrapper {
+      background: rgb(245, 245, 245);
+      border-bottom: 1px solid rgb(230, 230, 230);
+    }
+
+    .item-content {
+      padding: 20px;
+    }
+
+    small {
+      font-size: 12px;
+    }
+  }
+`;
+
+export const StartSavingWrapper = styled.div`
+  border-radius: 28px;
+  text-align: center;
+  background: url("https://afforai.com/img/graphics/laptop-landing-16.png")
+    no-repeat;
+  background-size: 100% 100%;
+  min-height: 400px;
+`;
+
+export const ProductLink = styled.a`
+  background: rgb(246, 232, 229);
+  border: 1px solid rgb(255, 60, 5);
+  color: rgb(255, 58, 2) !important;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 15px;
+
+  img {
+    margin-right: 3px;
+  }
+`;
+
+export const FAQWrapper = styled.div`
+  .faq {
+    padding: 24px 24px 12px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 15px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+        transition-duration: 0.5s;
+      }
+
+      &.collapsed {
+        svg {
+          transform: rotate(180deg);
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+
+  .row a {
+    color: rgb(96, 4, 255);
+    text-decoration: underline rgb(96, 4, 255);
   }
 `;

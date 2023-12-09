@@ -1,18 +1,19 @@
-import { Button, HeaderNav } from "../../assets";
-
-const navLinks = ["Affiliate", "Pricing", "Testimonials", "Help Center"];
+import { Button, HeaderNav, links } from "../../assets";
+import { navLinks } from "../extra";
 
 export const Header = () => {
   return (
     <HeaderNav className="flex-column navbar navbar-expand-md navbar-light fixed-top">
       <div className="container-fluid header">
-        <span className="navbar-brand">
-          <img
-            src="https://afforai.com/img/graphics/logo-new-violet.webp"
-            alt="Afforai Logo"
-          />
+        <a
+          href={links.homeLink}
+          target="_blank"
+          rel="noreferrer"
+          className="navbar-brand"
+        >
+          <img src={links.logo} alt="Afforai Logo" />
           Afforai
-        </span>
+        </a>
 
         <div className="d-block d-md-none">
           <AuthenticationButton />
@@ -29,11 +30,17 @@ export const Header = () => {
 
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
-            {navLinks.map((navLink) => (
+            {navLinks.map(({ name, link, target }) => (
               <li className="nav-item">
-                <span key={navLink} className="nav-link">
-                  {navLink}
-                </span>
+                <a
+                  key={name}
+                  href={link}
+                  className="nav-link"
+                  target={target ?? "_blank"}
+                  rel="noreferrer"
+                >
+                  {name}
+                </a>
               </li>
             ))}
           </ul>
@@ -49,7 +56,11 @@ export const Header = () => {
 
 const AuthenticationButton = () => (
   <>
-    <Button className="btn-gray me-2">Login</Button>
-    <Button className="btn-gradient">Try for free</Button>
+    <a href={links.login} target="_blank" rel="noreferrer">
+      <Button className="btn-gray me-2">Login</Button>
+    </a>
+    <a href={links.signup} target="_blank" rel="noreferrer">
+      <Button className="btn-gradient">Try for free</Button>
+    </a>
   </>
 );

@@ -1,4 +1,4 @@
-import { FooterWrapper, Title } from "../../assets";
+import { FooterWrapper, Title, links } from "../../assets";
 import {
   companyInformation,
   language,
@@ -12,13 +12,15 @@ export const Footer = () => {
   return (
     <FooterWrapper className="row">
       <div className="col-md-4 col-12 pe-4">
-        <span className="navbar-brand">
-          <img
-            src="https://afforai.com/img/graphics/logo-new-violet.webp"
-            alt="Afforai Logo"
-          />
+        <a
+          href={links.homeLink}
+          target="_blank"
+          rel="noreferrer"
+          className="navbar-brand"
+        >
+          <img src={links.logo} alt="Afforai Logo" />
           Afforai
-        </span>
+        </a>
 
         <span>
           Afforai is your research tool in to damn near anything. Helping you
@@ -28,13 +30,9 @@ export const Footer = () => {
         <span>Copyright © {year} Afforai Inc. All rights reserved.</span>
 
         <span>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.producthunt.com/products/afforai?utm_source=badge-top-post-badge&utm_medium=badge#afforai"
-          >
+          <a target="_blank" rel="noreferrer" href={links.badgeOne}>
             <img
-              src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=403202&theme=light&period=daily"
+              src={links.badgeSvg}
               alt="Afforai - Summarize, interact, translate your documents with AI | Product Hunt"
               width={200}
             />
@@ -43,7 +41,7 @@ export const Footer = () => {
 
         <h6>Backed by</h6>
         <img
-          src="https://afforai.com/img/logos/sputnikatx.png"
+          src={links.sputnik}
           width={137}
           alt="Sputnik ATX VC"
           className="mb-md-0 mb-5"
