@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Button,
   CommonLayoutWrapper,
@@ -46,22 +47,24 @@ export const CommonLayout = ({
   underBtnTitle,
   children,
 }: CommonLayoutProps) => {
+  const { t } = useTranslation();
+
   return (
     <CommonLayoutWrapper className="container ">
       <div className="row container-content">
         {btnTitle && (
           <div className="col-12">
-            <Button className="btn-bordered">{btnTitle}</Button>
+            <Button className="btn-bordered">{t(btnTitle)}</Button>
           </div>
         )}
 
         <div className="col-lg-6 col-md-8">
-          <HeadingOne className="my-4"> {title && title} </HeadingOne>
-          {subText && <p className="">{subText}</p>}
+          <HeadingOne className="my-4"> {title && t(title)} </HeadingOne>
+          {subText && <p className="">{t(subText)}</p>}
 
           {underBtnTitle && (
             <Button className="btn-gradient btn-md my-4">
-              {underBtnTitle}
+              {t(underBtnTitle)}
             </Button>
           )}
         </div>
@@ -94,22 +97,28 @@ export const CommonLayoutTwo = ({
   colTwoClass = "col-md-6",
   children,
 }: CommonLayoutTwoProps) => {
+  const { t } = useTranslation();
+
   return (
     <div className={`container ${className}`}>
       <CommonDocumentWrapper className={`row ${rowClass}`}>
         <div className={`mb-5 ${colOneClass}`}>
           {btnTitle && (
-            <Button className="btn-bordered mb-4">{btnTitle}</Button>
+            <Button className="btn-bordered mb-4">{t(btnTitle)}</Button>
           )}
 
-          {title && <HeadingOne>{title}</HeadingOne>}
+          {title && <HeadingOne>{t(title)}</HeadingOne>}
 
-          {subText && <p className="my-4">{subText}</p>}
+          {subText && <p className="my-4">{t(subText)}</p>}
 
           {showActionButtons && (
             <div className="buttons d-none d-lg-block">
-              <Button className="btn-gradient btn-md me-3">Try for free</Button>
-              <Button className="btn-gray btn-md">View Pricing</Button>
+              <Button className="btn-gradient btn-md me-3">
+                {t("header.signup")}
+              </Button>
+              <Button className="btn-gray btn-md">
+                {t("viewPort.viewPricing")}
+              </Button>
             </div>
           )}
 
@@ -128,20 +137,26 @@ export const CommonLayoutThree = ({
   title,
   subText,
   isNew,
-}: CommonLayoutThreeProps) => (
-  <div className="text-start item">
-    <div className="img-wrapper">
-      <img src={imgLink} alt="" className="img-fluid" />
-    </div>
+}: CommonLayoutThreeProps) => {
+  const { t } = useTranslation();
 
-    <div className="item-content">
-      <h6>
-        {title}{" "}
-        {isNew && (
-          <span className="badge rounded-pill badge-primary ms-3">New</span>
-        )}
-      </h6>
-      <small>{subText}</small>
+  return (
+    <div className="text-start item">
+      <div className="img-wrapper">
+        <img src={imgLink} alt="" className="img-fluid" />
+      </div>
+
+      <div className="item-content">
+        <h6>
+          {t(title)}
+          {isNew && (
+            <span className="badge rounded-pill badge-primary ms-3">
+              {t("new")}
+            </span>
+          )}
+        </h6>
+        <small>{t(subText)}</small>
+      </div>
     </div>
-  </div>
-);
+  );
+};

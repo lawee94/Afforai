@@ -1,0 +1,143 @@
+{
+  "new": "New",
+  "credits": "credits",
+  "getStarted": "Get Started for Free",
+  "moreInfo": "For more information, check out our",
+  "header": {
+    "affiliate": "Affiliate",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "helpCenter": "Help Center",
+    "login": "Log in",
+    "signup": "Try for free"
+  },
+  "footer": {
+    "desc": "Afforai is your research tool in to damn near anything. Helping you summarize, translate, and withdraw data from documents",
+    "copyright": "Copyright",
+    "right": "Afforai Inc. All rights reserved.",
+    "ourStory": "Our Story",
+    "security": "Security",
+    "roadMap": "Road Map",
+    "contactUs": "Contact Us",
+    "apiDoc": "API Docs",
+    "terms": "Term Of Use",
+    "policy": "Privacy Policy",
+    "facebook": "Facebook Group",
+    "linkedIn": "LinkedIn",
+    "twitter": "Twitter",
+    "blog": "Medium Blog",
+    "en": "English",
+    "vi": "Vietnamese",
+    "backedBy": "Backed by",
+    "company": "Company",
+    "resources": "Resources",
+    "social": "Follow Us",
+    "language": "Language"
+  },
+  "viewPort": {
+    "title": "Your second brain for maximizing productivity",
+    "subText": "Afforai is an AI chatbot that searches, summarizes, and translates info from multiple sources to produce trustworthy research. Feed lengthy research documents to stacks of dry compliance requirements and extract the key findings you need.",
+    "scrollOne": "Summarize Key Findings",
+    "scrollTwo": "Compare Between Documents",
+    "scrollThree": "Search For Answers",
+    "scrollFour": "Ask in Any Language",
+    "viewPricing": "View pricing"
+  },
+  "others": {
+    "lovedBy": "Loved by",
+    "userAround": "users around the world"
+  },
+  "tiresomeDoc": {
+    "title": "Say goodbye to long, tiresome documents",
+    "subText": "Afforai seamlessly translates documents, files, spreadsheets & websites, filtering out what you don’t need & answering your specific questions within seconds.",
+    "textOne": "A whip smart research assistant",
+    "textTwo": "We speak every language",
+    "textThree": "Reliable data citation for answers",
+    "textFour": "Fort-Knox level data security"
+  },
+  "streamline": {
+    "btnTitle": "10x your productivity",
+    "title": "Save yourself from stress & streamline your workflow",
+    "subText": "The average worker spends 9 hours per week looking through & gathering information from thick stacks of documents. With Afforai, you can save yourself 8 hours per week (plus a lot of headaches)."
+  },
+  "chooseUs": {
+    "btnTitle": "Why choose us?",
+    "title": "Built for the user",
+    "subText": "Afforai is where exceptional customer focus meets exceptional technology.",
+    "cardOneTitle": "Cross Language Querying",
+    "cardOneSubText": "Afforai is able to translate your documents to more than 100 languages, meaning wherever you’re from, you can be assured we can help.",
+    "cardTwoTitle": "Multiple file types supported",
+    "cardTwoSubText": "Afforai can extract data from a multitude of formats, including; PDF, URL, DOCX, PPTX & XLSX, as well as your own text & links from Websites. The possibilities are limitless!",
+    "cardThreeTitle": "Valuable Data Citation",
+    "cardThreeSubText": "Afforai is able to show exactly where your data has been extracted from & highlight it for you, so you never loose your time validating information again.",
+    "cardFourTitle": "Built in Document Viewer",
+    "cardFourSubText": "Never Switch tabs again. Afforai’s document viewer means that you can have your uploaded files right next to your chatbot, giving you the ability to search the file, and refer to it for data citations.",
+    "cardFiveTitle": "Unbreakable Security",
+    "cardFiveSubText": "Afforai uses Azure Server & Azure OpenAI API. In other words, your data is more than safe with us. Learn more."
+  },
+  "versatile": {
+    "btnTitle": "Most versatile",
+    "title": "Create multiple chatbots for different purposes",
+    "subText": "Legal documents? Summarizing a book? Extracting data from a website? We allow you to create multiple chatbots at one time, so you can use Afforai for a whole range of purposes."
+  },
+  "assistant": {
+    "btnTitle": "Different Modes Available",
+    "title": "Customize your assistant with a range of different modes",
+    "subText": "Further power your questions with additional modes. Afforai allows you to switch between three different modes, each which have unique ways of utilising our AI tools to answer your question(s).",
+    "fastOneTitle": "Fast Mode (default)",
+    "fastOneSubText": "Quickly ask a question and receive an answer from the AI. This mode is most suited for applications that require only a small part of the documents to be scanned (ex. FAQ Chatbot, Search).",
+    "fastTwoTitle": "Powerful Mode",
+    "fastTwoSubText": "Get answers of extra high quality from the AI. This mode is most suited for applications that require inferences as well as the full documents to be scanned (ex. Textual Data Analysis, Search with Inference, Report Generation).",
+    "fastThreeTitle": "Google Mode",
+    "fastThreeSubText": "Supplement your answers with the top 3 results from Google Search. This adds extra reliability to back up our already incredibly accurate answers."
+  },
+  "language": {
+    "btnTitle": "Multiple Language Supported",
+    "title": "Regardless of where you are from, Afforai is for you",
+    "subText": "We support more than 100 Languages, meaning you can seamlessly use our services regardless of where you are from. Our Cross Language Querying feature also allows flawless translation of documents."
+  },
+  "fileWizard": {
+    "btnTitle": "Get more out of your files",
+    "title": "File Wizard - a game changing new feature",
+    "subText": "Convert your files with less effort than ever. Afforai’s File Wizard feature allows you to transform your files, in limitless different ways. We can translate, summarize, or explain your upload in no time"
+  },
+  "fileDrive": {
+    "btnTitle": "Seamless Integrations - Coming Soon",
+    "title": "Upload Files directly from Google Drive, One Drive & Dropbox",
+    "subText": "Afforai allows you to upload files directly from Google Drive, One Drive & Dropbox, meaning your experience will be smooth sailing regardless of your preferred"
+  },
+  "accuracy": {
+    "title": "Unquestionable accuracy & reliability",
+    "subText": "We pride ourselves on the quality of our chatbot’s responses, and go the extra mile to ensure the accuracy & reliability of our answers.",
+    "accuracyOneTitle": "Trusted by users all over the World",
+    "accuracyOneSubText": "Afforai is used all around the World, saving thousands of people time and money with our speed & accuracy.",
+    "accuracyTwoTitle": "Information filtering",
+    "accuracyTwoSubText": "Afforai gives you the highest quality answers, and filters out any irrelevant information.",
+    "accuracyThreeTitle": "Built in Comprehension Model",
+    "accuracyThreeSubText": "Our powerful comprehension model increases the power of our data retrieval."
+  },
+  "moneyBack": {
+    "btnTitle": "My promise to you",
+    "title": "100% money back guaranteed if you are not satisfied",
+    "subText": "We crafted Afforai with total belief in our ability to make a chatbot that is not only powerful and reliable, but able to maximise your satisfaction as a user. This is why we have implemented a money back guarantee if you find yourself not satisfied with the capabilities of Afforai."
+  },
+  "saving": {
+    "title": "Start saving time today!",
+    "subText": "Join an ever-growing community, and get with Afforai started free of charge!"
+  },
+  "faq": {
+    "name": "FAQs",
+    "questionOne": "Is Afforai free?",
+    "answerOne": "Yes, Afforai is free for all new users. Upon signing up, users are given 50 permanent credits",
+    "questionTwo": "What are subscription credits versus permanent credits?",
+    "answerTwo": "Subscription credits come from monthly payments, while permanent credits come from top ups. Subscription credits will be used before permanent credits, and subscription credits expire every month while permanent credits stay.",
+    "questionThree": "Does Afforai support documents storing on the cloud like Google Drive, One Drive, or Drop Box?",
+    "answerThree": "Currently Afforai only support uploading local documents and websites, in the near future we will integrate these cloud solutions. Sign up with us to get updated",
+    "questionFour": "Does Afforai support uploading images and video?",
+    "answerFour": "Currently Afforai supports OCR for scanned PDF, but not via image file directly. Afforai currently working on working with video and audio transcript.",
+    "questionFive": "Does Afforai support collaboration between accounts?",
+    "answerFive": "Currently Afforai is working on a solution to allow users to share chatbots and files. Sign up with us to get updated when this feature roll out.",
+    "questionSix": "Is my data secured?",
+    "answerSix": "Yes your data is secured with Afforai. We don't store your conversation with the AI, and the files you uploaded on the system is stored on the cloud using Microsoft Azure and MongoDB with their standard security. LLM calls are made using OpenAI Azure with their security measures."
+  }
+}

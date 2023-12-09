@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { LovedUserWrapper, links } from "../assets";
 
 export const LandingSummary = () => {
@@ -10,12 +11,16 @@ export const LandingSummary = () => {
   );
 };
 
-export const LovedUsers = () => (
-  <div className="text-center my-5">
-    <p>
-      Loved by <span className="text-purple"> 20,000+ </span> users around the
-      world
-    </p>
-    <img src={links.laptopLanding2} width={330} alt="" />
-  </div>
-);
+export const LovedUsers = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="text-center my-5">
+      <p>
+        {t("others.lovedBy")} <span className="text-purple"> 20,000+ </span>{" "}
+        {t("others.userAround")}
+      </p>
+      <img src={links.laptopLanding2} width={330} alt="" />
+    </div>
+  );
+};
