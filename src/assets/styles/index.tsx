@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AppWrapper = styled.body`
+export const AppWrapper = styled.div`
   margin: 0;
   font-family:
     Manrope,
@@ -36,6 +36,10 @@ export const AppWrapper = styled.body`
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  .pointer {
+    cursor: pointer;
   }
 
   .text-purple {
@@ -141,9 +145,9 @@ export const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
-    padding: 3px 8px;
+    padding: 3px 5px;
   }
 `;
 
@@ -186,8 +190,7 @@ export const HeaderNav = styled.nav`
   @media (max-width: 768px) {
     padding: 0;
     .header {
-      padding: 0;
-      padding: 8px 24px;
+      padding: 8px 15px;
       border-radius: 0;
     }
   }
@@ -367,9 +370,6 @@ export const CommonDocumentWrapper = styled.div`
 
     .mode-content {
       padding-top: 2px;
-    }
-    p {
-      display: flex;
     }
   }
 `;

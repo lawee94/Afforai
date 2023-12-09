@@ -1,0 +1,143 @@
+{
+  "new": "MỚI",
+  "credits": "tín dụng",
+  "getStarted": "Bắt đầu miễn phí",
+  "moreInfo": "Nếu bạn cần thêm trợ giúp, hãy xem",
+  "header": {
+    "affiliate": "liên kết",
+    "pricing": "Bảng giá",
+    "testimonials": "Đánh giá",
+    "helpCenter": "Trung tâm trợ giúp",
+    "login": "Đăng nhập",
+    "signup": "Dùng thử miễn phí"
+  },
+  "footer": {
+    "desc": "Afforai là công cụ nghiên cứu của bạn về hầu hết mọi thứ. Giúp bạn tóm tắt, dịch và rút dữ liệu từ tài liệu.",
+    "copyright": "Bản quyền",
+    "right": "Afforai Inc. Mọi quyền được bảo lưu.",
+    "ourStory": "Câu Chuyện",
+    "security": "An toàn dữ liệu",
+    "roadMap": "Lộ trình",
+    "contactUs": "Form liên hệ",
+    "apiDoc": "Tài liệu API",
+    "terms": "Điều khoản sử dụng",
+    "policy": "Chính sách bảo mật",
+    "facebook": "Facebook Group",
+    "linkedIn": "LinkedIn",
+    "twitter": "Twitter",
+    "blog": "Medium Blog",
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt",
+    "backedBy": "Đầu tư bởi",
+    "company": "Công ty",
+    "resources": "Tài liệu",
+    "social": "Theo dõi chúng tôi",
+    "language": "Ngôn ngữ"
+  },
+  "viewPort": {
+    "title": "Công cụ của bạn để nghiên cứu hầu như bất cứ điều gì",
+    "subText": "Afforai có thể nhập thông tin về bất kỳ chủ đề nào, từ bất kỳ lĩnh vực nào, bằng bất kỳ ngôn ngữ nào, và tóm tắt các kết quả chính liên quan đến mục tiêu của bạn.",
+    "scrollOne": "Không cần trả tiền hàng tháng",
+    "scrollTwo": "Đầy đủ tính năng",
+    "scrollThree": "Tiếp kiệm thời gian",
+    "scrollFour": "Dịch mọi ngôn ngữ",
+    "viewPricing": "Tham khảo giá"
+  },
+  "others": {
+    "lovedBy": "Sản phẩm được sự tín dụng của",
+    "userAround": "người dùng toàn thế giới"
+  },
+  "tiresomeDoc": {
+    "title": "Tạm biệt với sự mệt mỏi của việc tìm kiếm tài liệu",
+    "subText": "Afforai dễ dàng dịch tài liệu, tệp tin, bảng tính và trang web, lọc ra những gì bạn không cần và trả lời những câu hỏi cụ thể của bạn chỉ trong vài giây.",
+    "textOne": "Một trợ lý nghiên cứu thông minh",
+    "textTwo": "Chúng tôi hỗ trợ mọi ngôn ngữ",
+    "textThree": "Trích dẫn dữ liệu đáng tin cậy cho câu trả lời",
+    "textFour": "Bảo mật dữ liệu cấp độ Fort-Knox"
+  },
+  "streamline": {
+    "btnTitle": "Tăng năng suất gấp 10 lần",
+    "title": "Tiết kiệm hàng trăm giờ thời gian của bạn với Afforai",
+    "subText": "Trung bình mỗi người dành 9 giờ mỗi tuần chỉ để thu thập thông tin từ các tài liệu. Đó là hơn 432 giờ mỗi năm! Afforai có thể tiết kiệm cho bạn đến 400 giờ mỗi năm khi đọc và trích xuất dữ liệu từ các tài liệu, tiết kiệm hàng ngàn đô la trong quá trình đó."
+  },
+  "chooseUs": {
+    "btnTitle": "Tại sao chọn chúng tôi?",
+    "title": "Xây dựng cho người Việt",
+    "subText": "Afforai là nơi sự chăm sóc khách hàng xuất sắc kết hợp với công nghệ xuất sắc.",
+    "cardOneTitle": "Truy vấn đa ngôn ngữ",
+    "cardOneSubText": "Afforai có thể dịch tài liệu của bạn sang hơn 100 ngôn ngữ, có nghĩa là bất kể bạn đến từ đâu, bạn có thể yên tâm rằng chúng tôi có thể giúp bạn.",
+    "cardTwoTitle": "Hỗ trợ nhiều loại tệp tin",
+    "cardTwoSubText": "Afforai có thể trích xuất dữ liệu từ nhiều định dạng, bao gồm: PDF, URL, DOCX, PPTX & XLSX, cũng như văn bản và liên kết của bạn từ các trang web. Bắt đầu làm việc trong tích tắc!",
+    "cardThreeTitle": "Trích dẫn dữ liệu có chuẩn xác",
+    "cardThreeSubText": "Afforai có thể chỉ ra chính xác nơi dữ liệu của bạn đã được trích dẫn từ và làm highlight cho bạn, vì vậy bạn không bao giờ mất thời gian kiểm tra thông tin.",
+    "cardFourTitle": "Trình xem tài liệu tích hợp",
+    "cardFourSubText": "Không cần chuyển tab nữa. Trình xem tài liệu của Afforai cho phép bạn có thể có các tệp đã tải lên ngay bên cạnh chatbot của bạn, cho phép bạn tìm kiếm tệp và tham khảo nó để trích dẫn dữ liệu.",
+    "cardFiveTitle": "Bảo mật thông tin cao cấp",
+    "cardFiveSubText": "Afforai sử dụng Azure Server & Azure OpenAI API. Nói cách khác, dữ liệu của bạn hoàn toàn an toàn với chúng tôi. Đọc thêm."
+  },
+  "versatile": {
+    "btnTitle": "Đa năng nhất",
+    "title": "Tạo nhiều chatbot cho các mục đích khác nhau",
+    "subText": "Tài liệu pháp lý? Tóm tắt một cuốn sách? Trích xuất dữ liệu từ một trang web? Chúng tôi cho phép bạn tạo nhiều chatbot cùng một lúc, để bạn có thể sử dụng Afforai cho một loạt các mục đích khác nhau."
+  },
+  "assistant": {
+    "btnTitle": "Có nhiều chế độ khác nhau",
+    "title": "Tùy chỉnh trợ lý của bạn với nhiều chế độ khác nhau",
+    "subText": "Nâng cao câu hỏi của bạn với các chế độ bổ sung. Afforai cho phép bạn chuyển đổi giữa ba chế độ khác nhau, mỗi chế độ có cách sử dụng công cụ AI của chúng tôi để trả lời câu hỏi của bạn một cách hiệu quả.",
+    "fastOneTitle": "Chế độ nhanh (mặc định)",
+    "fastOneSubText": "Nhanh chóng đặt câu hỏi và nhận câu trả lời từ AI. Chế độ này phù hợp nhất cho các ứng dụng chỉ yêu cầu quét một phần nhỏ của tài liệu (ví dụ: Chatbot FAQ, Tìm kiếm).",
+    "fastTwoTitle": "Chế độ mạnh mẽ",
+    "fastTwoSubText": "Nhận câu trả lời chất lượng cao hơn từ AI. Chế độ này phù hợp nhất cho các ứng dụng yêu cầu suy luận cũng như quét toàn bộ tài liệu (ví dụ: Phân tích dữ liệu văn bản, Tìm kiếm kèm suy luận, Tạo báo cáo).",
+    "fastThreeTitle": "Chế độ Google",
+    "fastThreeSubText": "Bổ sung câu trả lời của bạn với 3 kết quả hàng đầu từ Tìm kiếm Google. Điều này tăng tính đáng tin cậy để xác minh câu trả lời của chúng tôi đã chính xác."
+  },
+  "language": {
+    "btnTitle": "Hỗ trợ nhiều ngôn ngữ",
+    "title": "Bất kể bạn đến từ đâu, Afforai đều dành cho bạn",
+    "subText": "Chúng tôi hỗ trợ hơn 100 ngôn ngữ, có nghĩa là bạn có thể sử dụng dịch vụ của chúng tôi một cách liền mạch bất kể bạn đến từ đâu. Chức năng Truy vấn đa ngôn ngữ của chúng tôi cũng cho phép dịch tài liệu một cách hoàn hảo."
+  },
+  "fileWizard": {
+    "btnTitle": "Tận dụng tối đa tệp của bạn",
+    "title": "File Wizard - một tính năng mới đột phá",
+    "subText": "Chuyển đổi tệp của bạn một cách dễ dàng hơn bao giờ hết. Tính năng File Wizard của Afforai cho phép bạn biến đổi tệp của mình theo nhiều cách khác nhau. Chúng tôi có thể dịch, tóm tắt hoặc giải thích tệp tải lên của bạn trong thời gian ngắn."
+  },
+  "fileDrive": {
+    "btnTitle": "Tích hợp hữu ích - Sắp ra mắt",
+    "title": "Tải lên tệp trực tiếp từ Google Drive, One Drive & Dropbox",
+    "subText": "Afforai cho phép bạn tải lên tệp trực tiếp từ Google Drive, One Drive & Dropbox, điều này có nghĩa là trải nghiệm của bạn sẽ trôi chảy mượt mà bất kể dịch vụ lưu trữ mà bạn ưa thích."
+  },
+  "accuracy": {
+    "title": "Độ chính xác và đáng tin cậy không đối thủ",
+    "subText": "Chúng tôi tự hào về chất lượng câu trả lời của chatbot của chúng tôi và luôn cố gắng đảm bảo độ chính xác của những câu trả lời.",
+    "accuracyOneTitle": "Được tin tưởng bởi người dùng toàn thế giới",
+    "accuracyOneSubText": "Afforai được sử dụng trên thế giới, tiết kiệm thời gian và tiền bạc cho hàng ngàn người với tốc độ và chính xác.",
+    "accuracyTwoTitle": "Chọn lọc thông tin",
+    "accuracyTwoSubText": "Afforai cung cấp cho bạn những câu trả lời chất lượng cao nhất và loại bỏ bất kỳ thông tin nào không liên quan.",
+    "accuracyThreeTitle": "Mô hình suy luận thông tin",
+    "accuracyThreeSubText": "Mô hình suy luận thông tin của chúng tôi tăng khả năng của việc truy xuất dữ liệu từ tài liệu của bạn."
+  },
+  "moneyBack": {
+    "btnTitle": "Cam kết của tôi đối với bạn",
+    "title": "Hoàn tiền 100% nếu bạn không hài lòng",
+    "subText": "Chúng tôi tạo Afforai với niềm tin tuyệt đối vào khả năng của chúng tôi để tạo ra một Chatbot mạnh mẽ và đáng tin cậy, nhằm tối đa hóa sự hài lòng của bạn như một người dùng. Đó là lý do tại sao chúng tôi đã thực hiện cam kết hoàn tiền nếu bạn cảm thấy không hài lòng với khả năng của Afforai."
+  },
+  "saving": {
+    "title": "Bắt đầu tiết kiệm thời gian ngay hôm nay!",
+    "subText": "Tham gia cùng cộng đồng ngày càng phát triển và bắt đầu sử dụng Afforai miễn phí!"
+  },
+  "faq": {
+    "name": "Câu hỏi thường gặp",
+    "questionOne": "Afforai có miễn phí không?",
+    "answerOne": "Có, Afforai miễn phí cho tất cả người dùng mới. Sau khi đăng ký, người dùng được cung cấp 50 tín dụng vĩnh viễn",
+    "questionTwo": "Tín dụng thuê bao và tính dụng vĩnh viễn là gì?",
+    "answerTwo": "Tín dụng thuê bao đến từ các gói thuê bao trong khi tín dụng vĩnh viễn đến từ các gói trả theo yêu cầu. Tín dụng thuê bao sẽ được dùng trước tín dụng vĩnh viễn. Tín dụng thuê bao sẽ hết hạn hàng tháng trong khi tín dụng vĩnh viễn không bao giờ hết hạn.",
+    "questionThree": "Afforai có hỗ trợ lưu trữ tài liệu trên đám mây như Google Drive, One Drive, hoặc Drop Box không?",
+    "answerThree": "Hiện tại, Afforai chỉ hỗ trợ tải lên tài liệu và trang web từ máy tính cá nhân, trong tương lai gần chúng tôi sẽ tích hợp các giải pháp đám mây này. Đăng ký với chúng tôi để nhận thông tin cập nhật.",
+    "questionFour": "Afforai có hỗ trợ tải lên hình ảnh và video không?",
+    "answerFour": "Hiện tại, Afforai hỗ trợ OCR cho PDF được quét, nhưng không hỗ trợ trực tiếp qua tệp hình ảnh. Afforai đang làm việc để hỗ trợ xử lý video và chuyển đổi âm thanh.",
+    "questionFive": "Afforai có hỗ trợ cộng tác giữa các tài khoản không?",
+    "answerFive": "Hiện tại, Afforai đang phát triển một giải pháp cho phép người dùng chia sẻ chatbot và tệp tin. Đăng ký với chúng tôi để nhận thông tin cập nhật khi tính năng này được triển khai.",
+    "questionSix": "Dữ liệu của tôi có được bảo mật không?",
+    "answerSix": "YDữ liệu của bạn được bảo mật với Afforai. Chúng tôi không lưu trữ cuộc trò chuyện của bạn với AI, và các tệp bạn tải lên hệ thống được lưu trữ trên đám mây sử dụng Microsoft Azure và MongoDB với các biện pháp bảo mật tiêu chuẩn của họ. Các cuộc gọi LLM được thực hiện bằng cách sử dụng OpenAI Azure với các biện pháp bảo mật của họ."
+  }
+}

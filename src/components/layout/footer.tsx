@@ -1,13 +1,30 @@
+import { useState, useCallback, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { FooterWrapper, Title, links } from "../../assets";
 import {
   companyInformation,
-  language,
+  languageList,
   resources,
   socialInformation,
 } from "../extra";
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
   const year = new Date().getFullYear();
+  const [language, setLanguage] = useState("");
+
+  useEffect(() => {
+    const currentLanguage = i18n.language;
+    setLanguage(currentLanguage);
+  }, [i18n.language]);
+
+  const changeLanguage = useCallback(
+    (lang: string) => {
+      setLanguage(lang);
+      i18n.changeLanguage(lang);
+    },
+    [i18n, setLanguage],
+  );
 
   return (
     <FooterWrapper className="row">
@@ -22,36 +39,31 @@ export const Footer = () => {
           Afforai
         </a>
 
-        <span>
-          Afforai is your research tool in to damn near anything. Helping you
-          summarize, translate, and withdraw data from documents
-        </span>
+        <span>{t("moreInfo")}</span>
 
-        <span>Copyright © {year} Afforai Inc. All rights reserved.</span>
+        <span>
+          {t("footer.copyright")} © {year} {t("footer.right")}
+        </span>
 
         <span>
           <a target="_blank" rel="noreferrer" href={links.badgeOne}>
-            <img
-              src={links.badgeSvg}
-              alt="Afforai - Summarize, interact, translate your documents with AI | Product Hunt"
-              width={200}
-            />
+            <img src={links.badgeSvg} width={200} alt="" />
           </a>
         </span>
 
-        <h6>Backed by</h6>
-        <img
-          src={links.sputnik}
-          width={137}
-          alt="Sputnik ATX VC"
-          className="mb-md-0 mb-5"
-        />
+        <h6>{t("footer.backedBy")}</h6>
+        <img src={links.sputnik} width={137} alt="" className="mb-md-0 mb-5" />
       </div>
 
-      <ListInformation title="Company" items={companyInformation} />
-      <ListInformation title="Resources" items={resources} />
-      <ListInformation title="Follow Us" items={socialInformation} />
-      <ListInformation title="Language" items={language} />
+      <ListInformation title={t("footer.company")} items={companyInformation} />
+      <ListInformation title={t("footer.resources")} items={resources} />
+      <ListInformation title={t("footer.social")} items={socialInformation} />
+      <ListInformation
+        title={t("footer.language")}
+        language={language}
+        items={languageList}
+        changeLanguage={changeLanguage}
+      />
     </FooterWrapper>
   );
 };
@@ -59,20 +71,39 @@ export const Footer = () => {
 const ListInformation = ({
   title,
   items,
+  language,
+  changeLanguage,
 }: {
   title: string;
+  language?: string;
   items: Record<string, string>[];
-}) => (
-  <div className="col-md-2 col-6 mb-4">
-    <Title className="mb-4">{title}</Title>
-    <ul>
-      {items?.map((item) => (
-        <li key={item.title}>
-          <a href={item.link} target="_blank" rel="noreferrer">
-            {item.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+  changeLanguage?: (lang: string) => void;
+}) => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="col-md-2 col-6 mb-4">
+      <Title className="mb-4">{title}</Title>
+      <ul>
+        {items?.map(({ title, link, lang }) => (
+          <li key={title}>
+            {lang ? (
+              <span
+                className={`pointer ${language === lang ? "text-purple" : ""}`}
+                onClick={() => {
+                  changeLanguage?.(lang);
+                }}
+              >
+                {t(title)}
+              </span>
+            ) : (
+              <a href={link} target="_blank" rel="noreferrer">
+                {t(title)}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};

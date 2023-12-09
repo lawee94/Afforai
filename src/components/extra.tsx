@@ -2,233 +2,217 @@ import { links } from "../assets";
 
 export const navLinks = [
   {
-    name: "Affiliate",
     link: links.affiliate,
+    name: "header.affiliate",
   },
   {
-    name: "Pricing",
     link: links.pricing,
+    name: "header.pricing",
   },
   {
-    name: "Testimonials",
     link: `${links.homeLink}#testimonial`,
     target: "_self",
+    name: "header.testimonials",
   },
   {
-    name: "Help Center",
     link: links.helpCenter,
+    name: "header.helpCenter",
   },
 ];
 
 export const companyInformation = [
   {
-    title: "Our Story",
+    title: "footer.ourStory",
     link: links.ourStory,
   },
   {
-    title: "Affiliate",
+    title: "header.affiliate",
     link: links.affiliate,
   },
   {
-    title: "Security",
+    title: "footer.security",
     link: links.security,
   },
   {
-    title: "Road Map",
+    title: "footer.roadMap",
     link: links.roadmap,
   },
   {
-    title: "Contact Us",
+    title: "footer.contactUs",
     link: links.contact,
   },
 ];
 
 export const resources = [
   {
-    title: "Help Center",
+    title: "header.helpCenter",
     link: links.helpCenter,
   },
   {
-    title: "API Docs",
+    title: "footer.apiDoc",
     link: links.apiDocs,
   },
   {
-    title: "term Of Use",
+    title: "footer.terms",
     link: links.terms,
   },
   {
-    title: "Privacy Policy",
+    title: "footer.policy",
     link: links.privacyPolicy,
   },
 ];
 
 export const socialInformation = [
   {
-    title: "Facebook Group",
+    title: "footer.facebook",
     link: links.faceBook,
   },
   {
-    title: "LinkedIn",
+    title: "footer.linkedIn",
     link: links.linkedIn,
   },
   {
-    title: "Twitter",
+    title: "footer.twitter",
     link: links.twitter,
   },
   {
-    title: "Medium Blog",
+    title: "footer.blog",
     link: links.blog,
   },
 ];
 
-export const language = [
+export const languageList = [
   {
-    title: "English",
-    link: "#",
+    title: "footer.en",
+    lang: "en",
   },
   {
-    title: "Vietnamese",
-    link: "#",
+    title: "footer.vi",
+    lang: "vi",
   },
 ];
 
 export const features = [
-  "Summarize Key Findings",
-  "Compare Between Documents",
-  "Search For Answers",
-  "Ask in Any Language",
+  "viewPort.scrollOne",
+  "viewPort.scrollTwo",
+  "viewPort.scrollThree",
+  "viewPort.scrollFour",
 ];
 
 export const documentFeatures = [
-  "A whip smart research assistant",
-  "We speak every language",
-  "Reliable data citation for answers",
-  "Fort-Knox level data security",
+  "tiresomeDoc.textOne",
+  "tiresomeDoc.textTwo",
+  "tiresomeDoc.textThree",
+  "tiresomeDoc.textFour",
 ];
 
 export const streamLineData = {
-  btnTitle: "10x your productivity",
-  title: "Save yourself from stress & streamline your workflow",
-  subText:
-    "The average worker spends 9 hours per week looking through & gathering information from thick stacks of documents. With Afforai, you can save yourself 8 hours per week (plus a lot of headaches).",
+  btnTitle: "streamline.btnTitle",
+  title: "streamline.title",
+  subText: "streamline.subText",
   imageLink: links.streamline,
 };
 
 export const whyChooseUsData = {
-  btnTitle: "Why choose us?",
-  title: "Built for the user",
-  subText:
-    "Afforai is where exceptional customer focus meets exceptional technology.",
+  btnTitle: "chooseUs.btnTitle",
+  title: "chooseUs.title",
+  subText: "chooseUs.subText",
 };
 
 export const modesData = [
   {
     count: 1,
-    title: "Fast Mode (default)",
+    title: "assistant.fastOneTitle",
+    subText: "assistant.fastOneSubText",
     imageLink: links.fastMode,
-    subText:
-      "Quickly ask a question and receive an answer from the AI. This mode is most suited for applications that require only a small part of the documents to be scanned (ex. FAQ Chatbot, Search).",
   },
   {
     count: 4,
-    title: "Powerful Mode",
+    title: "assistant.fastTwoTitle",
+    subText: "assistant.fastTwoSubText",
     imageLink: links.powerOff,
-    subText:
-      "Get answers of extra high quality from the AI. This mode is most suited for applications that require inferences as well as the full documents to be scanned (ex. Textual Data Analysis, Search with Inference, Report Generation).",
   },
   {
     count: 5,
-    title: "Google Mode",
+    title: "assistant.fastThreeTitle",
+    subText: "assistant.fastThreeSubText",
     imageLink: links.fastMode,
-    subText:
-      "Supplement your answers with the top 3 results from Google Search. This adds extra reliability to back up our already incredibly accurate answers.",
   },
 ];
 
 export const versatileData = {
-  btnTitle: "Most versatile",
-  title: "Create multiple chatbots for different purposes",
-  subText:
-    "Legal documents? Summarizing a book? Extracting data from a website? We allow you to create multiple chatbots at one time, so you can use Afforai for a whole range of purposes.",
+  btnTitle: "versatile.btnTitle",
+  title: "versatile.title",
+  subText: "versatile.subText",
   imageLink: links.versatile,
   showActionButtons: true,
 };
 
 export const documentData = {
-  title: "Say goodbye to long, tiresome documents",
-  subText:
-    "Afforai seamlessly translates documents, files, spreadsheets & websites, filtering out what you don’t need & answering your specific questions within seconds.",
+  title: "tiresomeDoc.title",
+  subText: "tiresomeDoc.subText",
   imageLink: links.laptopLanding4,
 };
 
 export const assistantData = {
-  btnTitle: " Different Modes Available",
-  title: "Customize your assistant with a range of different modes",
-  subText:
-    "Further power your questions with additional modes. Afforai allows you to switch between three different modes, each which have unique ways of utilizing our AI tools to answer your question(s).",
+  btnTitle: "assistant.btnTitle",
+  title: "assistant.title",
+  subText: "assistant.subText",
   imageLink: links.customize,
   rowClass: "flex-row-reverse",
 };
 
 export const multiLanguageData = {
-  btnTitle: "Multiple Language Supported",
-  title: "Regardless of where you are from, Afforai is for you",
-  subText:
-    "We support more than 100 Languages, meaning you can seamlessly use our services regardless of where you are from. Our Cross Language Querying feature also allows flawless translation of documents.",
+  btnTitle: "language.btnTitle",
+  title: "language.title",
+  subText: "language.subText",
   imageLink: links.lang,
   className: "spacing-100",
 };
 
 export const fileWizardData = {
-  btnTitle: "Get more out of your files",
-  title: "File Wizard - a game changing new feature",
-  subText:
-    "Convert your files with less effort than ever. Afforai’s File Wizard feature allows you to transform your files, in limitless different ways. We can translate, summarize, or explain your upload in no time.",
+  btnTitle: "fileWizard.btnTitle",
+  title: "fileWizard.title",
+  subText: "fileWizard.subText",
   imageLink: links.fileWizard,
   rowClass: "flex-row-reverse",
 };
 
 export const fileDriveData = {
-  btnTitle: "Seamless Integrations - Coming Soon",
-  title: "Upload Files directly from Google Drive, One Drive & Dropbox",
-  subText:
-    "Afforai allows you to upload files directly from Google Drive, One Drive & Dropbox, meaning your experience will be smooth sailing regardless of your preferred.",
+  btnTitle: "fileDrive.btnTitle",
+  title: "fileDrive.title",
+  subText: "fileDrive.subText",
   imageLink: links.drive,
   maxImageWidth: 600,
 };
 
 export const accuracyData = {
-  title: "Unquestionable accuracy & reliability",
-  subText:
-    "We pride ourselves on the quality of our chatbot’s responses, and go the extra mile to ensure the accuracy & reliability of our answers.",
+  title: "accuracy.title",
+  subText: "accuracy.subText",
 };
 
 export const accuracyInnerData = [
   {
-    title: "Trusted by users all over the World",
-    subText:
-      "Afforai is used all around the World, saving thousands of people time and money with our speed & accuracy.",
+    title: "accuracy.accuracyOneTitle",
+    subText: "accuracy.accuracyOneSubText",
     imgLink: links.accuracyOne,
   },
   {
-    title: "Information filtering",
-    subText:
-      "Afforai gives you the highest quality answers, and filters out any irrelevant information.",
+    title: "accuracy.accuracyTwoTitle",
+    subText: "accuracy.accuracyTwoSubText",
     imgLink: links.accuracyTwo,
   },
   {
-    title: "Built in Comprehension Model",
-    subText:
-      "Our powerful comprehension model increases the power of our data retrieval",
+    title: "accuracy.accuracyThreeTitle",
+    subText: "accuracy.accuracyThreeSubText",
     imgLink: links.accuracyThree,
   },
 ];
 
 export const moneyBackData = {
-  btnTitle: "My promise to you",
-  title: "100% money back guaranteed if you are not satisfied",
-  subText:
-    "We crafted Afforai with total belief in our ability to make a chatbot that is not only powerful and reliable, but able to maximise your satisfaction as a user. This is why we have implemented a money back guarantee if you find yourself not satisfied with the capabilities of Afforai.",
+  btnTitle: "moneyBack.btnTitle",
+  title: "moneyBack.title",
+  subText: "moneyBack.subText",
   imageLink: links.signedBy,
   colOneClass: "col-md-6",
   colTwoClass: "col-md-4",
@@ -312,33 +296,27 @@ export const testimonialTwo = [
 
 export const faqs = [
   {
-    question: "Is Afforai free?",
-    answer:
-      "Yes, Afforai is free for all new users. Upon signing up, users are given 50 permanent credits",
+    question: "faq.questionOne",
+    answer: "faq.answerOne",
   },
   {
-    question: "What are subscription credits versus permanent credits?",
-    answer:
-      "Subscription credits come from monthly payments, while permanent credits come from top ups. Subscription credits will be used before permanent credits, and subscription credits expire every month while permanent credits stay.",
+    question: "faq.questionTwo",
+    answer: "faq.answerTwo",
   },
   {
-    question:
-      "Does Afforai support documents storing on the cloud like Google Drive, One Drive, or Drop Box?",
-    answer:
-      "Currently Afforai only support uploading local documents and websites, in the near future we will integrate these cloud solutions. Sign up with us to get updated.",
+    question: "faq.questionThree",
+    answer: "faq.answerThree",
   },
   {
-    question: "Does Afforai support uploading images and video?",
-    answer:
-      "Currently Afforai supports OCR for scanned PDF, but not via image file directly. Afforai currently working on working with video and audio transcript.",
+    question: "faq.questionFour",
+    answer: "faq.answerFour",
   },
   {
-    question: "Does Afforai support collaboration between accounts?",
-    answer:
-      "Currently Afforai is working on a solution to allow users to share chatbots and files. Sign up with us to get updated when this feature roll out.",
+    question: "faq.questionFive",
+    answer: "faq.answerFive",
   },
   {
-    question: "Is my data secured?",
-    answer: `Yes your data is secured with Afforai. We don't store your conversation with the AI, and the files you uploaded on the system is stored on the cloud using Microsoft Azure and MongoDB with their standard security. LLM calls are made using OpenAI Azure with their security measures.`,
+    question: "faq.questionSix",
+    answer: "faq.answerSix",
   },
 ];

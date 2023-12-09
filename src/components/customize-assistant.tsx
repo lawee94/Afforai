@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { CommonLayoutTwo } from "./layout/common-layout";
 import { assistantData, modesData } from "./extra";
 import { TitleDeep } from "../assets";
 
 export const CustomizedAssistant = () => {
+  const { t } = useTranslation();
+
   return (
     <CommonLayoutTwo {...assistantData}>
       {modesData.map(({ imageLink, title, subText, count }) => (
@@ -11,13 +14,13 @@ export const CustomizedAssistant = () => {
             <img src={imageLink} alt="" />
           </div>
           <div className="mode-content">
-            <p>
-              <TitleDeep className="mb-0 me-2">{title}</TitleDeep>{" "}
+            <div className="d-flex">
+              <TitleDeep className="mb-0 me-2">{t(title)}</TitleDeep>
               <span className="badge rounded-pill badge-primary">
-                {count} credits
+                {count} {t("credits")}
               </span>
-            </p>
-            <span>{subText}</span>
+            </div>
+            <span>{t(subText)}</span>
           </div>
         </div>
       ))}

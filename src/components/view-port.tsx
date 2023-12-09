@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 import {
   Button,
   CheckMark,
@@ -9,6 +10,8 @@ import {
 import { features } from "./extra";
 
 export const ViewPort = () => {
+  const { t } = useTranslation();
+
   return (
     <ViewPortWrapper>
       <div className="deal">
@@ -21,13 +24,8 @@ export const ViewPort = () => {
         </a>
       </div>
       <div className="text-content">
-        <h1>Your second brain for maximizing productivity</h1>
-        <p>
-          Afforai is an AI chatbot that searches, summarizes, and translates
-          info from multiple sources to produce trustworthy research. Feed
-          lengthy research documents to stacks of dry compliance requirements
-          and extract the key findings you need.
-        </p>
+        <h1>{t("viewPort.title")}</h1>
+        <p>{t("viewPort.subText")}</p>
       </div>
 
       <div className="d-block d-xl-none">
@@ -42,24 +40,32 @@ export const ViewPort = () => {
 
       <div className="buttons">
         <a href={links.signup} target="_blank" rel="noreferrer">
-          <Button className="btn-gradient btn-md me-3">Try for free</Button>
+          <Button className="btn-gradient btn-md me-3">
+            {t("header.signup")}
+          </Button>
         </a>
 
         <a href={links.pricing} target="_blank" rel="noreferrer">
-          <Button className="btn-gray btn-md">View Pricing</Button>
+          <Button className="btn-gray btn-md">
+            {t("viewPort.viewPricing")}
+          </Button>
         </a>
       </div>
     </ViewPortWrapper>
   );
 };
 
-const Features = () => (
-  <div className="d-flex justify-content-center mb-4">
-    {features.map((feature) => (
-      <div className="feature">
-        <CheckMark />
-        {feature}
-      </div>
-    ))}
-  </div>
-);
+const Features = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="d-flex justify-content-center mb-4">
+      {features.map((feature) => (
+        <div key={feature} className="feature">
+          <CheckMark />
+          {t(feature)}
+        </div>
+      ))}
+    </div>
+  );
+};
