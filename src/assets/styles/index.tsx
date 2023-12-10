@@ -72,6 +72,22 @@ export const AppWrapper = styled.div`
     font-size: 14px;
   }
 
+  .rfm-marquee-container {
+    overflow-x: auto !important;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   @media (max-width: 768px) {
     padding: 40px 20px;
 

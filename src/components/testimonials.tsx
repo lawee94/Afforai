@@ -1,14 +1,28 @@
+import { useRef } from "react";
 import Marquee from "react-fast-marquee";
 import { CommonLayoutWrapper, HeadingOne, ProductLink, links } from "../assets";
-import { testimonialTwo, testimonials } from "./extra";
-
-interface TestimonialProps {
-  imgLink: string;
-  title: string;
-  name: string;
-}
+import { MarqueeData, useDragAndScroll } from "./hook/useDragAndScroll";
+import { testimonialM1, testimonialM2 } from "./extra";
 
 export const Testimonials = () => {
+  const marqueeRef = useRef<HTMLDivElement>(null);
+  const marqueeTwoRef = useRef<HTMLDivElement>(null);
+
+  const {
+    testimonials,
+    handleScroll,
+    handleDragStart,
+    handleDragEnd,
+    handleDrag,
+  } = useDragAndScroll({ ref: marqueeRef, data: testimonialM1 });
+  const {
+    testimonials: testimonialTwo,
+    handleScroll: handleM2Scroll,
+    handleDragStart: handleM2DragStart,
+    handleDragEnd: handleM2DragEnd,
+    handleDrag: handleM2Drag,
+  } = useDragAndScroll({ ref: marqueeTwoRef, data: testimonialM2 });
+
   return (
     <CommonLayoutWrapper>
       <div className="containers">
@@ -23,26 +37,46 @@ export const Testimonials = () => {
           </div>
         </div>
       </div>
-      <Marquee>
-        <div className="d-flex mb-4">
-          {testimonials.map((testimonial) => (
-            <Testimonial key={testimonial.name} {...testimonial} />
-          ))}
-        </div>
-      </Marquee>
 
-      <Marquee direction="right">
-        <div className="d-flex">
-          {testimonialTwo.map((testimonial) => (
-            <Testimonial key={testimonial.name} {...testimonial} />
+      <div
+        ref={marqueeRef}
+        onMouseDown={handleDragStart}
+        onMouseUp={handleDragEnd}
+        onMouseMove={handleDrag}
+        className="d-flex mb-4"
+      >
+        <Marquee autoFill pauseOnClick>
+          {testimonials.map((testimonial, i) => (
+            <div key={`${testimonial.name}${i}`} onPointerEnter={handleScroll}>
+              <Testimonial {...testimonial} />
+            </div>
           ))}
-        </div>
-      </Marquee>
+        </Marquee>
+      </div>
+
+      <div
+        ref={marqueeTwoRef}
+        onMouseDown={handleM2DragStart}
+        onMouseUp={handleM2DragEnd}
+        onMouseMove={handleM2Drag}
+        className="d-flex"
+      >
+        <Marquee autoFill pauseOnClick direction="right">
+          {testimonialTwo.map((testimonial, i) => (
+            <div
+              key={`${testimonial.name}${i}-two`}
+              onPointerEnter={handleM2Scroll}
+            >
+              <Testimonial {...testimonial} />
+            </div>
+          ))}
+        </Marquee>
+      </div>
     </CommonLayoutWrapper>
   );
 };
 
-export const Testimonial = ({ imgLink, title, name }: TestimonialProps) => (
+export const Testimonial = ({ imgLink, title, name }: MarqueeData) => (
   <div className="item item-600">
     <div className="testimonial-text">
       <p>{title}</p>
