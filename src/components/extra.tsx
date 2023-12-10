@@ -218,7 +218,7 @@ export const moneyBackData = {
   colTwoClass: "col-md-4",
 };
 
-export const testimonials = [
+export const testimonialM1 = [
   {
     title: `I've signed up and starting testing Afforai Ask for my next project's business model, and I have had a great experience so far. It has been exactly what I needed with its fast response times. For now, I am considering purchasing the Afforai - Lite Plan.`,
     imgLink: links.testimonialOne,
@@ -256,7 +256,7 @@ export const testimonials = [
   },
 ];
 
-export const testimonialTwo = [
+export const testimonialM2 = [
   {
     title: `Afforai has so many different applications and yet doesn't feel overwhelming. It's streamlined and feels fun to use, and the developers clearly put time into making it simple to use. Definitely worth my investment!`,
     imgLink: links.testimonialEight,
